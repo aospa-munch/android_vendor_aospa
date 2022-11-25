@@ -43,8 +43,7 @@ PRODUCT_PACKAGES += \
 
 # Paranoid Packages
 PRODUCT_PACKAGES += \
-    ParanoidPapers \
-    ParanoidSense
+    ParanoidPapers
 
 # Paranoid Packages (OTA)
 ifneq ($(filter RELEASE BETA,$(AOSPA_BUILDTYPE)),)

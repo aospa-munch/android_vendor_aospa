@@ -44,10 +44,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.config.media_vol_steps=30
 
-# Enable Sense service for 64-bit only
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    ro.face.sense_service=$(TARGET_SUPPORTS_64_BIT_APPS)
-
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 # Disable extra StrictMode features on all non-engineering builds
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
