@@ -33,7 +33,7 @@ PRODUCT_PACKAGES += \
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED ?= true
 
-ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
+ifneq ($(TARGET_FACE_UNLOCK_SUPPORTED),false)
 PRODUCT_PACKAGES += \
     FaceUnlockService
 
